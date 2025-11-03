@@ -1,3 +1,12 @@
+/* ---------- GLOBAL RESET ---------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
 /* ---------- TOP BANNER ---------- */
 .top-banner {
   background-color: #FFD400;
@@ -21,14 +30,9 @@
   padding-left: 100%;
 }
 
-/* Animation: kører teksten fra højre mod venstre */
 @keyframes scrollText {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
 }
 
 /* ---------- NAVBAR ---------- */
@@ -39,10 +43,13 @@
   padding: 15px 50px;
   border-bottom: 2px solid #e0e0e0;
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-  height:  70px;
+  height: 70px;
   margin-right: 20px;
 }
 
@@ -53,9 +60,9 @@
 }
 
 .nav-btn {
-  background-color: #fff;
+  background-color: #d0001b;
   border: 2px solid #d0001b;
-  color: #d0001b;
+  color: #fff;
   padding: 8px 16px;
   border-radius: 20px;
   font-weight: 600;
@@ -87,18 +94,77 @@
 .icons {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .icon-flag {
   height: 18px;
 }
 
-/* Sticky navbar */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+/* ---------- LANGUAGE DROPDOWN ---------- */
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.lang-btn:hover {
+  background-color: #f3f3f3;
+}
+
+.lang-flag {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 140px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  color: #000;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.lang-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.lang-menu img {
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* Vis dropdown, når aktiv */
+.lang-dropdown.active .lang-menu {
+  display: block;
 }
 
 /* ---------- RESPONSIVE ---------- */
