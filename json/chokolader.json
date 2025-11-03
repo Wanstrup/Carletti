@@ -1,0 +1,290 @@
+[
+  {
+    "index": 534002,
+    "navn": "Milk chocolate cone",
+    "vaegt_gram": 8.5,
+    "billede": "milk_chocolate_cone.jpg",
+    "pris_pr_kg_eur": 8.18,
+    "beskrivelse": "Milk chocolate cone"
+  },
+  {
+    "index": 534001,
+    "navn": "Dark chocolate cup",
+    "vaegt_gram": 10.0,
+    "billede": "dark_chocolate_cup.jpg",
+    "pris_pr_kg_eur": 7.94,
+    "beskrivelse": "Dark chocolate cup with “stollen” (ginger) taste filling"
+  },
+  {
+    "index": 532146,
+    "navn": "Marzipan ML SCHUBERT",
+    "vaegt_gram": 10.5,
+    "billede": "marzipan_ml_schubert.jpg",
+    "pris_pr_kg_eur": 6.35,
+    "beskrivelse": "Almond paste with 50% almonds covered with dark chocolate"
+  },
+  {
+    "index": 532141,
+    "navn": "Crispy toffee (bulk)",
+    "vaegt_gram": 10.0,
+    "billede": "crispy_toffee_bulk.jpg",
+    "pris_pr_kg_eur": 4.71,
+    "beskrivelse": "Cooked toffee mass covered with milk chocolate, sprinkled with crispy rice balls and again covered with milk chocolate"
+  },
+  {
+    "index": 532101,
+    "navn": "Almond chocolate",
+    "vaegt_gram": 8.0,
+    "billede": "almond_chocolate.jpg",
+    "pris_pr_kg_eur": 8.51,
+    "beskrivelse": "Mix of milk and dark chocolate with chopped almonds"
+  },
+  {
+    "index": 531711,
+    "navn": "Double nougat",
+    "vaegt_gram": 9.2,
+    "billede": "double_nougat.jpg",
+    "pris_pr_kg_eur": 11.25,
+    "beskrivelse": "Double layer nougat light and dark – hazelnut/almond"
+  },
+  {
+    "index": 531360,
+    "navn": "White frog",
+    "vaegt_gram": 11.5,
+    "billede": "white_frog.jpg",
+    "pris_pr_kg_eur": 7.22,
+    "beskrivelse": "White chocolate frog"
+  },
+  {
+    "index": 531354,
+    "navn": "Milk chocolate with nougat filling frogs",
+    "vaegt_gram": 11.8,
+    "billede": "milk_chocolate_nougat_frog.jpg",
+    "pris_pr_kg_eur": 6.62,
+    "beskrivelse": "Milk chocolate with nougat filling"
+  },
+  {
+    "index": 531353,
+    "navn": "White chocolate with nougat filling frogs",
+    "vaegt_gram": 11.6,
+    "billede": "white_chocolate_nougat_frog.jpg",
+    "pris_pr_kg_eur": 7.09,
+    "beskrivelse": "White chocolate with nougat filling frog"
+  },
+  {
+    "index": 531317,
+    "navn": "Mint frogs",
+    "vaegt_gram": 12.0,
+    "billede": "mint_frog.jpg",
+    "pris_pr_kg_eur": 5.56,
+    "beskrivelse": "Foundant based mint filling in dark chocolate"
+  },
+  {
+    "index": 531316,
+    "navn": "Caramel frogs",
+    "vaegt_gram": 12.0,
+    "billede": "caramel_frog.jpg",
+    "pris_pr_kg_eur": 5.14,
+    "beskrivelse": "Caramel filling in milk chocolate"
+  },
+  {
+    "index": 531229,
+    "navn": "Dark chocolate with mint filling praline",
+    "vaegt_gram": 13.6,
+    "billede": "dark_mint_praline.jpg",
+    "pris_pr_kg_eur": 5.43,
+    "beskrivelse": "Foundant based mint filling in dark chocolate"
+  },
+  {
+    "index": 531228,
+    "navn": "Creme brulée taste praline",
+    "vaegt_gram": 7.3,
+    "billede": "creme_brulee_praline.jpg",
+    "pris_pr_kg_eur": 6.45,
+    "beskrivelse": "Crème brulée taste, fat based filling in milk chocolate"
+  },
+  {
+    "index": 531214,
+    "navn": "Mint truffle in dark chocolate praline",
+    "vaegt_gram": 10.2,
+    "billede": "mint_truffle_dark_praline.jpg",
+    "pris_pr_kg_eur": 6.31,
+    "beskrivelse": "Foundant based mint filling in milk and dark chocolate"
+  },
+  {
+    "index": 531206,
+    "navn": "Dark chocolate with mint filling",
+    "vaegt_gram": 9.0,
+    "billede": "dark_chocolate_mint.jpg",
+    "pris_pr_kg_eur": 5.51,
+    "beskrivelse": "Foundant based mint filling in dark chocolate"
+  },
+  {
+    "index": 531205,
+    "navn": "Rum taste truffle praline",
+    "vaegt_gram": 9.4,
+    "billede": "rum_truffle_praline.jpg",
+    "pris_pr_kg_eur": 6.35,
+    "beskrivelse": "Rum taste truffle in milk and dark chocolate"
+  },
+  {
+    "index": 531204,
+    "navn": "Cherry praline",
+    "vaegt_gram": 11.0,
+    "billede": "cherry_praline.jpg",
+    "pris_pr_kg_eur": 7.26,
+    "beskrivelse": "Cherry filling with whole pitted cherry in milk and dark chocolate"
+  },
+  {
+    "index": 531202,
+    "navn": "Orange truffle",
+    "vaegt_gram": 7.5,
+    "billede": "orange_truffle.jpg",
+    "pris_pr_kg_eur": 6.26,
+    "beskrivelse": "Dark chocolate with orange truffle filling"
+  },
+  {
+    "index": 531165,
+    "navn": "Milk chocolate with toffee filling",
+    "vaegt_gram": 13.6,
+    "billede": "milk_toffee.jpg",
+    "pris_pr_kg_eur": 4.82,
+    "beskrivelse": "Toffee filling in milk chocolate"
+  },
+  {
+    "index": 531133,
+    "navn": "Salty toffee praline",
+    "vaegt_gram": 9.3,
+    "billede": "salty_toffee.jpg",
+    "pris_pr_kg_eur": 5.44,
+    "beskrivelse": "Salty toffee in milk chocolate"
+  },
+  {
+    "index": 531131,
+    "navn": "Toffee praline",
+    "vaegt_gram": 11.5,
+    "billede": "toffee_praline_1.jpg",
+    "pris_pr_kg_eur": 5.04,
+    "beskrivelse": "Toffee filling in milk chocolate"
+  },
+  {
+    "index": 531129,
+    "navn": "Toffee praline",
+    "vaegt_gram": 9.3,
+    "billede": "toffee_praline_2.jpg",
+    "pris_pr_kg_eur": 5.29,
+    "beskrivelse": "Toffee praline"
+  },
+  {
+    "index": 531123,
+    "navn": "Toffee praline",
+    "vaegt_gram": 8.5,
+    "billede": "toffee_praline_3.jpg",
+    "pris_pr_kg_eur": 5.16,
+    "beskrivelse": "Toffee filling in milk chocolate"
+  },
+  {
+    "index": 531109,
+    "navn": "Twin hazelnut",
+    "vaegt_gram": 10.9,
+    "billede": "twin_hazelnut.jpg",
+    "pris_pr_kg_eur": 7.44,
+    "beskrivelse": "Hazelnut nougat with whole hazelnuts with milk chocolate"
+  },
+  {
+    "index": 531108,
+    "navn": "Hazelnut nougat",
+    "vaegt_gram": 11.0,
+    "billede": "hazelnut_nougat.jpg",
+    "pris_pr_kg_eur": 7.11,
+    "beskrivelse": "Hazelnut nougat with whole nut in milk chocolate"
+  },
+  {
+    "index": 531107,
+    "navn": "Almond nougat",
+    "vaegt_gram": 8.2,
+    "billede": "almond_nougat.jpg",
+    "pris_pr_kg_eur": 6.18,
+    "beskrivelse": "Almond nougat in milk chocolate"
+  },
+  {
+    "index": 531101,
+    "navn": "Hazelnut in milk chocolate",
+    "vaegt_gram": 8.7,
+    "billede": "hazelnut_in_milk.jpg",
+    "pris_pr_kg_eur": 8.39,
+    "beskrivelse": "Hazelnuts in milk chocolate"
+  },
+  {
+    "index": "NEW1",
+    "navn": "Coconut",
+    "vaegt_gram": 11.0,
+    "billede": "coconut.jpg",
+    "pris_pr_kg_eur": 4.79,
+    "beskrivelse": "Desiccated coconuts covered with milk chocolate and decorated with white chocolate"
+  },
+  {
+    "index": "NEW2",
+    "navn": "White tear shape praline",
+    "vaegt_gram": 8.2,
+    "billede": "white_tear_praline.jpg",
+    "pris_pr_kg_eur": 6.5,
+    "beskrivelse": "Cappuccino filling in white chocolate"
+  },
+  {
+    "index": "NEW3",
+    "navn": "Cappuccino praline",
+    "vaegt_gram": 8.2,
+    "billede": "cappuccino_praline.jpg",
+    "pris_pr_kg_eur": 6.0,
+    "beskrivelse": "Cappuccino filling in milk chocolate"
+  },
+  {
+    "index": "NEW4",
+    "navn": "Milky praline",
+    "vaegt_gram": 8.8,
+    "billede": "milky_praline.jpg",
+    "pris_pr_kg_eur": 5.8,
+    "beskrivelse": "White milk filling in milk chocolate"
+  },
+  {
+    "index": "NEW5",
+    "navn": "Crunchy hazelnut",
+    "vaegt_gram": 11.0,
+    "billede": "crunchy_hazelnut.jpg",
+    "pris_pr_kg_eur": 6.46,
+    "beskrivelse": "Milk chocolate with crunchy hazelnut filling"
+  },
+  {
+    "index": "NEW6",
+    "navn": "White heart J - Lemon taste",
+    "vaegt_gram": 10.2,
+    "billede": "white_heart_lemon.jpg",
+    "pris_pr_kg_eur": 6.37,
+    "beskrivelse": "Lemon taste fat based filling in white chocolate"
+  },
+  {
+    "index": "NEW7",
+    "navn": "Milk chocolate with strawberry-yoghurt taste filling",
+    "vaegt_gram": 10.2,
+    "billede": "milk_strawberry_yoghurt.jpg",
+    "pris_pr_kg_eur": 6.6,
+    "beskrivelse": "Strawberry yoghurt taste filling in milk chocolate"
+  },
+  {
+    "index": "NEW8",
+    "navn": "White chocolate with strawberry-yoghurt taste filling",
+    "vaegt_gram": 10.2,
+    "billede": "white_strawberry_yoghurt.jpg",
+    "pris_pr_kg_eur": 7.1,
+    "beskrivelse": "Strawberry yoghurt taste filling in white chocolate"
+  },
+  {
+    "index": "NEW9",
+    "navn": "Dubai style praline",
+    "vaegt_gram": 9.1,
+    "billede": "dubai_style_praline.jpg",
+    "pris_pr_kg_eur": null,
+    "beskrivelse": "Milk chocolate with crunchy pistachio filling"
+  }
+]

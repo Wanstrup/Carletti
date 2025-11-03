@@ -1,0 +1,114 @@
+/* ---------- TOP BANNER ---------- */
+.top-banner {
+  background-color: #FFD400;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite;
+}
+
+.marquee span {
+  font-weight: 600;
+  color: #000;
+  font-size: 0.9rem;
+  padding-left: 100%;
+}
+
+/* Animation: kører teksten fra højre mod venstre */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.logo {
+  height:  70px;
+  margin-right: 20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background-color: #fff;
+  border: 2px solid #d0001b;
+  color: #d0001b;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.red {
+  background-color: #d0001b;
+  color: white;
+}
+
+.nav-btn:hover {
+  opacity: 0.85;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-flag {
+  height: 18px;
+}
+
+/* Sticky navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .marquee span {
+    font-size: 0.8rem;
+  }
+}
