@@ -1,17 +1,23 @@
 // js/include.js
+document.addEventListener("DOMContentLoaded", async () => {
+  // Indlæs navbar og footer parallelt
+  await Promise.all([
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("navbar-placeholder").innerHTML = html;
+      }),
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("footer-placeholder").innerHTML = html;
+      })
+  ]);
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Load navbar
-  fetch("nav.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("navbar-placeholder").innerHTML = data;
-    });
+  console.log("✅ Nav og footer indlæst");
 
-  // Load footer
-  fetch("footer.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
+  // Når navbaren er klar, indlæs language.js dynamisk
+  const script = document.createElement("script");
+  script.src = "js/language.js";
+  document.body.appendChild(script);
 });
