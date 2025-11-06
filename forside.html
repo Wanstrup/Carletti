@@ -6,162 +6,181 @@
   <title>Carletti – Gift Boxes</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/forside.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
   <!-- Navbar placeholder -->
   <div id="navbar-placeholder"></div>
 
-  <!-- Din sideindhold -->
- <main class="configurator-container">
-  <!-- LEFT PANEL -->
-  <section class="configurator-left">
-  <!-- Header Box -->
-<div class="header-box">
-  <div class="config-header">
-    <div class="header-title">
-      <img src="img/logo.png" alt="Carletti logo" class="header-logo" />
-      <div>
-        <h1>Gift box configurator</h1>
-        <p>Step 1</p>
+  <!-- Indhold -->
+  <main class="configurator-container">
+
+    <!-- LEFT PANEL -->
+    <section class="configurator-left">
+
+      <!-- Header Box -->
+      <div class="header-box">
+        <div class="config-header">
+          <div class="header-title">
+            <img src="img/logo.png" alt="Carletti logo" class="header-logo" />
+            <div>
+              <h1>Gift box configurator</h1>
+              <p>Step 1</p>
+            </div>
+          </div>
+          <div class="weight-box">0 of x g</div>
+        </div>
       </div>
+
+      <!-- CONFIG BOX -->
+     <div class="config-box">
+
+  <!-- OUTER PACKAGING -->
+  <div class="accordion-item active" id="outer">
+    <h2 class="accordion-header">
+      Packaging
+      <i class="fa fa-chevron-down"></i>
+    </h2>
+    <div class="accordion-content">
+<!-- GIFTBOX SECTION -->
+<div class="option-section" id="giftbox-section">
+  <h3>Giftboxes</h3>
+  <div class="option-buttons">
+    <button data-type="giftbox-small">Small (24 pralines)</button>
+    <button data-type="giftbox-medium">Medium (36 pralines)</button>
+    <button data-type="giftbox-large">Large (64 pralines)</button>
+  </div>
+
+  <!-- Blister valg (skjult som standard) -->
+  <div class="blister-section">
+    <h4>Select blister insert</h4>
+    <div class="blister-options">
+      <button data-blister="3x8">3×8 layout</button>
+      <button data-blister="6x6">6×6 layout</button>
+      <button data-blister="8x6">8×6 layout</button>
     </div>
-    <div class="weight-box">0 of x g</div>
+  </div>
+
+  <!-- Wrapper valg (skjult som standard) -->
+  <div class="wrapper-section">
+    <h4>Do you want your pralines wrapped?</h4>
+    <div class="wrapper-options">
+      <button data-wrap="wrapped">Wrapped</button>
+      <button data-wrap="unwrapped">Unwrapped</button>
+    </div>
   </div>
 </div>
 
+<!-- BOX SECTION -->
+<div class="option-section" id="box-section">
+  <h3>Boxes</h3>
+  <div class="option-buttons">
+    <button data-type="box-small">Small (135 g)</button>
+    <button data-type="box-medium">Medium (400 g)</button>
+  </div>
 
-    <!-- Main Config Box -->
-    <div class="config-box">
-      <h2>Select packaging option</h2>
+  <!-- Wrapper valg (direkte efter) -->
+  <div class="wrapper-section">
+    <h4>Do you want your pralines wrapped?</h4>
+    <div class="wrapper-options">
+      <button data-wrap="wrapped">Wrapped</button>
+      <button data-wrap="unwrapped">Unwrapped</button>
+    </div>
+  </div>
+</div>
 
-      <!-- Giftboxes -->
-      <div class="option-section">
-        <h3>Giftboxes</h3>
-        <div class="option-buttons">
-          <button>
-            <div class="option-header">
-              small <i class="fa fa-info-circle"></i>
-            </div>
-            <span>24 pralines</span>
-          </button>
-          <button class="active">
-            <div class="option-header">
-              medium <i class="fa fa-info-circle"></i>
-            </div>
-            <span>36 pralines</span>
-          </button>
-          <button>
-            <div class="option-header">
-              large <i class="fa fa-info-circle"></i>
-            </div>
-            <span>64 pralines</span>
-          </button>
-        </div>
-      </div>
+<!-- BAG SECTION -->
+<div class="option-section" id="bag-section">
+  <h3>Bags</h3>
+  <div class="option-buttons">
+    <button data-type="bag-small">Small (100 g)</button>
+    <button data-type="bag-medium">Medium (350 g)</button>
+    <button data-type="bag-large">Large (1.8 kg)</button>
+  </div>
 
-      <!-- Boxes -->
-      <div class="option-section">
-        <h3>Boxes</h3>
-        <div class="option-buttons">
-          <button>
-            <div class="option-header">
-              small <i class="fa fa-info-circle"></i>
-            </div>
-            <span>135 g<br><small>interval 100–135 g</small></span>
-          </button>
-          <button>
-            <div class="option-header">
-              medium <i class="fa fa-info-circle"></i>
-            </div>
-            <span>400 g<br><small>interval 350–400 g</small></span>
-          </button>
-        </div>
-      </div>
+  <!-- Wrapper valg -->
+  <div class="wrapper-section">
+    <h4>Do you want your pralines wrapped?</h4>
+    <div class="wrapper-options">
+      <button data-wrap="wrapped">Wrapped</button>
+      <button data-wrap="unwrapped">Unwrapped</button>
+    </div>
+  </div>
+</div>
 
-      <!-- Bags -->
-      <div class="option-section">
-        <h3>Bags</h3>
-        <div class="option-buttons">
-          <button>
-            <div class="option-header">
-              small <i class="fa fa-info-circle"></i>
-            </div>
-            <span>100 g<br><small>interval 70–100 g</small></span>
-          </button>
-          <button>
-            <div class="option-header">
-              medium <i class="fa fa-info-circle"></i>
-            </div>
-            <span>350 g<br><small>interval 300–350 g</small></span>
-          </button>
-          <button>
-            <div class="option-header">
-              large <i class="fa fa-info-circle"></i>
-            </div>
-            <span>1.8 kg<br><small>interval 1.7–1.8 kg</small></span>
-          </button>
-        </div>
-      
-
-      <!-- Back / Continue -->
       <div class="config-nav">
         <a href="#" class="back-link">← back</a>
         <a href="#" class="continue-link">Continue →</a>
       </div>
     </div>
+  </div>
 
- <!-- Divider-style sections (Pralines, Design, Request Quote) -->
-<div class="section-dividers">
-  <div class="divider">pralines</div>
-  <div class="divider">design</div>
-  <div class="divider">request quote</div>
-</div>
-
-</div>
-  </section>
-
-  <!-- RIGHT PANEL (Order Summary) -->
-  <aside class="configurator-right">
-    <div class="summary-box">
-      <h2>Order Summary</h2>
-      <table class="summary-table">
-        <tr>
-          <th colspan="2" class="summary-subtitle">Items selected</th>
-        </tr>
-        <tr>
-          <td>Outerlayer</td>
-          <td>
-            Giftbox: Small 24 pralines<br />
-            Wrapped pralines
-          </td>
-        </tr>
-        <tr>
-          <td>Pralines</td>
-          <td>
-            Cuba caramel: x8<br />
-            Dark chocolate cup: x8<br />
-            Cherry praline: x8
-          </td>
-        </tr>
-        <tr>
-          <td>Design</td>
-          <td>
-            Red<br />
-            Christmas<br />
-            Happy holidays
-          </td>
-        </tr>
-      </table>
+  <!-- PRALINES -->
+  <div class="accordion-item" id="pralines">
+    <h2 class="accordion-header">
+      Pralines
+      <i class="fa fa-chevron-down"></i>
+    </h2>
+    <div class="accordion-content">
+      <p>Her vælger man sine fyldte chokolader.</p>
     </div>
-  </aside>
-</main>
+  </div>
 
+  <!-- DESIGN -->
+  <div class="accordion-item" id="design">
+    <h2 class="accordion-header">
+      Design
+      <i class="fa fa-chevron-down"></i>
+    </h2>
+    <div class="accordion-content">
+      <p>Her vælger man æskens design.</p>
+    </div>
+  </div>
+
+  <!-- REQUEST QUOTE -->
+  <div class="accordion-item" id="quote">
+    <h2 class="accordion-header">
+      Request quote
+      <i class="fa fa-chevron-down"></i>
+    </h2>
+    <div class="accordion-content">
+      <p>Her sender man sin forespørgsel.</p>
+    </div>
+  </div>
+
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL -->
+    <aside class="configurator-right">
+      <div class="summary-box">
+        <h2>Order Summary</h2>
+        <table class="summary-table">
+          <tr><th colspan="2" class="summary-subtitle">Items selected</th></tr>
+          <tr>
+            <td>Outerlayer</td>
+            <td>Giftbox: Small 24 pralines<br>Wrapped pralines</td>
+          </tr>
+          <tr>
+            <td>Pralines</td>
+            <td>Cuba caramel: x8<br>Dark chocolate cup: x8<br>Cherry praline: x8</td>
+          </tr>
+          <tr>
+            <td>Design</td>
+            <td>Red<br>Christmas<br>Happy holidays</td>
+          </tr>
+        </table>
+      </div>
+    </aside>
+
+  </main>
 
   <!-- Footer placeholder -->
   <div id="footer-placeholder"></div>
 
   <script src="js/include.js"></script>
- 
+  <script src="js/accordion.js"></script>
+  <script src="js/config.js"></script>
 </body>
 </html>

@@ -251,3 +251,113 @@
     position: static;
   }
 }
+/* ---------- ACCORDION STYLING ---------- */
+.accordion-item {
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 16px 0;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.accordion-header:hover {
+  color: #d0001b;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item.active .accordion-content {
+  opacity: 1;
+  max-height: 800px; /* nok til det længste indhold */
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.accordion-item.active .accordion-header i {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-header i {
+  transition: transform 0.3s ease;
+}
+
+/* ---------- CLEAN STYLE FOR BLISTER & WRAPPER SECTIONS ---------- */
+
+/* Fjern “bokse” og lav kun en dividerlinje */
+.blister-section,
+.wrapper-section {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 0 0 0; /* kun lidt luft, ingen baggrund */
+  border: none; /* fjern tidligere border */
+  border-top: 1px solid #ddd; /* kun divider-linje for separation */
+  background: transparent !important; /* fjern evt. baggrundsfarve */
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Når de er aktive (vises) */
+.blister-section.active,
+.wrapper-section.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Indre layout */
+.blister-options,
+.wrapper-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Knapperne selv */
+.blister-options button,
+.wrapper-options button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.blister-options button:hover,
+.wrapper-options button:hover {
+  border-color: #d0001b;
+  color: #d0001b;
+}
+
+.blister-options button.active,
+.wrapper-options button.active {
+  border-color: #d0001b;
+  color: #d0001b;
+  font-weight: 600;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.blister-section.active,
+.wrapper-section.active {
+  animation: fadeSlideIn 0.25s ease forwards;
+}
