@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carletti – Gift Boxes</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forside.css">
 </head>
 <body>
 
@@ -12,9 +13,150 @@
   <div id="navbar-placeholder"></div>
 
   <!-- Din sideindhold -->
-  <main>
-    <h1>Velkommen til Carletti Gift Box Configurator</h1>
-  </main>
+ <main class="configurator-container">
+  <!-- LEFT PANEL -->
+  <section class="configurator-left">
+  <!-- Header Box -->
+<div class="header-box">
+  <div class="config-header">
+    <div class="header-title">
+      <img src="img/logo.png" alt="Carletti logo" class="header-logo" />
+      <div>
+        <h1>Gift box configurator</h1>
+        <p>Step 1</p>
+      </div>
+    </div>
+    <div class="weight-box">0 of x g</div>
+  </div>
+</div>
+
+
+    <!-- Main Config Box -->
+    <div class="config-box">
+      <h2>Select packaging option</h2>
+
+      <!-- Giftboxes -->
+      <div class="option-section">
+        <h3>Giftboxes</h3>
+        <div class="option-buttons">
+          <button>
+            <div class="option-header">
+              small <i class="fa fa-info-circle"></i>
+            </div>
+            <span>24 pralines</span>
+          </button>
+          <button class="active">
+            <div class="option-header">
+              medium <i class="fa fa-info-circle"></i>
+            </div>
+            <span>36 pralines</span>
+          </button>
+          <button>
+            <div class="option-header">
+              large <i class="fa fa-info-circle"></i>
+            </div>
+            <span>64 pralines</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Boxes -->
+      <div class="option-section">
+        <h3>Boxes</h3>
+        <div class="option-buttons">
+          <button>
+            <div class="option-header">
+              small <i class="fa fa-info-circle"></i>
+            </div>
+            <span>135 g<br><small>interval 100–135 g</small></span>
+          </button>
+          <button>
+            <div class="option-header">
+              medium <i class="fa fa-info-circle"></i>
+            </div>
+            <span>400 g<br><small>interval 350–400 g</small></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bags -->
+      <div class="option-section">
+        <h3>Bags</h3>
+        <div class="option-buttons">
+          <button>
+            <div class="option-header">
+              small <i class="fa fa-info-circle"></i>
+            </div>
+            <span>100 g<br><small>interval 70–100 g</small></span>
+          </button>
+          <button>
+            <div class="option-header">
+              medium <i class="fa fa-info-circle"></i>
+            </div>
+            <span>350 g<br><small>interval 300–350 g</small></span>
+          </button>
+          <button>
+            <div class="option-header">
+              large <i class="fa fa-info-circle"></i>
+            </div>
+            <span>1.8 kg<br><small>interval 1.7–1.8 kg</small></span>
+          </button>
+        </div>
+      
+
+      <!-- Back / Continue -->
+      <div class="config-nav">
+        <a href="#" class="back-link">← back</a>
+        <a href="#" class="continue-link">Continue →</a>
+      </div>
+    </div>
+
+ <!-- Divider-style sections (Pralines, Design, Request Quote) -->
+<div class="section-dividers">
+  <div class="divider">pralines</div>
+  <div class="divider">design</div>
+  <div class="divider">request quote</div>
+</div>
+
+</div>
+  </section>
+
+  <!-- RIGHT PANEL (Order Summary) -->
+  <aside class="configurator-right">
+    <div class="summary-box">
+      <h2>Order Summary</h2>
+      <table class="summary-table">
+        <tr>
+          <th colspan="2" class="summary-subtitle">Items selected</th>
+        </tr>
+        <tr>
+          <td>Outerlayer</td>
+          <td>
+            Giftbox: Small 24 pralines<br />
+            Wrapped pralines
+          </td>
+        </tr>
+        <tr>
+          <td>Pralines</td>
+          <td>
+            Cuba caramel: x8<br />
+            Dark chocolate cup: x8<br />
+            Cherry praline: x8
+          </td>
+        </tr>
+        <tr>
+          <td>Design</td>
+          <td>
+            Red<br />
+            Christmas<br />
+            Happy holidays
+          </td>
+        </tr>
+      </table>
+    </div>
+  </aside>
+</main>
+
 
   <!-- Footer placeholder -->
   <div id="footer-placeholder"></div>
