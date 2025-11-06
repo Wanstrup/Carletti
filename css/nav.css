@@ -102,6 +102,48 @@ html, body {
   height: 18px;
 }
 
+/* ---------- SEARCH ---------- */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  z-index: 2; /* 👈 gør ikonet klikbart */
+  position: relative;
+}
+
+.search-icon:hover {
+  color: #d0001b;
+}
+
+.search-input {
+  position: absolute;
+  right: 0;
+  width: 0;
+  opacity: 0;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  z-index: 1; /* 👈 ligger under ikonet */
+}
+
+/* Når aktiv: feltet folder sig ud til venstre */
+.search-container.active .search-input {
+  width: 180px;
+  opacity: 1;
+  right: 30px; /* 👈 efterlader plads til ikonet */
+}
+
+
 /* ---------- LANGUAGE DROPDOWN ---------- */
 .lang-dropdown {
   position: relative;

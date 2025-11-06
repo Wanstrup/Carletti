@@ -34,3 +34,28 @@ menu.querySelectorAll("a").forEach(link => {
     dropdown.classList.remove("active");
   });
 });
+
+
+// 🔍 Søgefunktion – viser/skjuler søgefeltet
+document.addEventListener("click", (event) => {
+  const searchContainer = document.querySelector(".search-container");
+  const searchIcon = document.querySelector(".search-icon");
+  const searchInput = document.querySelector(".search-input");
+
+  if (!searchContainer || !searchIcon || !searchInput) return;
+
+  // Klik på søgeikon åbner feltet
+  if (searchIcon.contains(event.target)) {
+    event.stopPropagation();
+    searchContainer.classList.toggle("active");
+    if (searchContainer.classList.contains("active")) {
+      searchInput.focus();
+    }
+  }
+
+  // Klik udenfor lukker søgefeltet
+  else if (!searchContainer.contains(event.target)) {
+    searchContainer.classList.remove("active");
+    searchInput.value = "";
+  }
+});
