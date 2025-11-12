@@ -54,13 +54,13 @@
 
   <!-- Blister valg (skjult som standard) -->
   <div class="blister-section">
-    <h4>Select blister insert</h4>
-    <div class="blister-options">
-      <button data-blister="3x8">3×8 layout</button>
-      <button data-blister="6x6">6×6 layout</button>
-      <button data-blister="8x6">8×6 layout</button>
-    </div>
+  <h4>Select blister insert</h4>
+  <div class="blister-options">
+    <button data-blister="3x8">3×8 layout</button>
+    <button data-blister="6x6">6×6 layout</button>
+    <button data-blister="8x6">8×6 layout</button>
   </div>
+</div>
 
   <!-- Wrapper valg (skjult som standard) -->
   <div class="wrapper-section">
@@ -109,70 +109,51 @@
   </div>
 </div>
 
-      <div class="config-nav">
-        <a href="#" class="back-link">← back</a>
-        <a href="#" class="continue-link">Continue →</a>
-      </div>
+     <div class="config-nav">
+  <a href="#" class="back-link" data-prev="">← back</a>
+  <a href="#" class="continue-link" data-next="steps/pralines.html">Continue →</a>
+</div>
     </div>
   </div>
 
-  <!-- PRALINES -->
-  <div class="accordion-item" id="pralines">
-    <h2 class="accordion-header">
-      Pralines
-      <i class="fa fa-chevron-down"></i>
-    </h2>
-    <div class="accordion-content">
-      <p>Her vælger man sine fyldte chokolader.</p>
-    </div>
-  </div>
+ <!-- PRALINES -->
+<div class="accordion-item" id="pralines">
+  <h2 class="accordion-header">
+    Pralines
+    <i class="fa fa-chevron-down"></i>
+  </h2>
+  <div class="accordion-content"></div>
+</div>
 
-  <!-- DESIGN -->
-  <div class="accordion-item" id="design">
-    <h2 class="accordion-header">
-      Design
-      <i class="fa fa-chevron-down"></i>
-    </h2>
-    <div class="accordion-content">
-      <p>Her vælger man æskens design.</p>
-    </div>
-  </div>
+<!-- DESIGN -->
+<div class="accordion-item" id="design">
+  <h2 class="accordion-header">
+    Design
+    <i class="fa fa-chevron-down"></i>
+  </h2>
+  <div class="accordion-content"></div>
+</div>
 
-  <!-- REQUEST QUOTE -->
-  <div class="accordion-item" id="quote">
-    <h2 class="accordion-header">
-      Request quote
-      <i class="fa fa-chevron-down"></i>
-    </h2>
-    <div class="accordion-content">
-      <p>Her sender man sin forespørgsel.</p>
-    </div>
-  </div>
+<!-- REQUEST QUOTE -->
+<div class="accordion-item" id="quote">
+  <h2 class="accordion-header">
+    Request quote
+    <i class="fa fa-chevron-down"></i>
+  </h2>
+  <div class="accordion-content"></div>
+</div>
 
-      </div>
     </section>
 
     <!-- RIGHT PANEL -->
-    <aside class="configurator-right">
-      <div class="summary-box">
-        <h2>Order Summary</h2>
-        <table class="summary-table">
-          <tr><th colspan="2" class="summary-subtitle">Items selected</th></tr>
-          <tr>
-            <td>Outerlayer</td>
-            <td>Giftbox: Small 24 pralines<br>Wrapped pralines</td>
-          </tr>
-          <tr>
-            <td>Pralines</td>
-            <td>Cuba caramel: x8<br>Dark chocolate cup: x8<br>Cherry praline: x8</td>
-          </tr>
-          <tr>
-            <td>Design</td>
-            <td>Red<br>Christmas<br>Happy holidays</td>
-          </tr>
-        </table>
-      </div>
-    </aside>
+
+<aside class="configurator-right">
+  <div class="summary-box">
+    <h2>Order Summary</h2>
+    <p class="summary-placeholder">No selections yet.</p>
+  </div>
+</aside>
+
 
   </main>
 
@@ -182,5 +163,7 @@
   <script src="js/include.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/config.js"></script>
+  <script src="js/step-loader.js"></script>
+  <script src="js/pralines-delegates.js"></script>
 </body>
 </html>
