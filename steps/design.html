@@ -1,1 +1,59 @@
-<p>Her vælger man æskens design.</p>
+<link rel="stylesheet" href="../css/design.css">
+
+<section class="design-step">
+
+  <h2 class="section-title">Select a color or theme for your design</h2>
+
+  <div class="design-container">
+
+    <!-- LEFT SIDE — COLORS + THEME DROPDOWN -->
+    <div class="design-box">
+      <h3>Select standard color:</h3>
+
+      <div class="color-grid">
+        <div class="color-dot" data-color="#e42d2d" style="background:#e42d2d"></div>
+        <div class="color-dot" data-color="#f26522" style="background:#f26522"></div>
+        <div class="color-dot" data-color="#ffca28" style="background:#ffca28"></div>
+        <div class="color-dot" data-color="#ffd740" style="background:#ffd740"></div>
+
+        <div class="color-dot" data-color="#427a25" style="background:#427a25"></div>
+        <div class="color-dot" data-color="#6bbb39" style="background:#6bbb39"></div>
+        <div class="color-dot" data-color="#b7e5ff" style="background:#b7e5ff"></div>
+        <div class="color-dot" data-color="#9ac8ff" style="background:#9ac8ff"></div>
+      </div>
+
+      <label>Select standard theme:</label>
+      <select id="theme-select">
+        <option value="" disabled selected>Select theme</option>
+        <option value="red">Easter</option>
+        <option value="christmas">Christmas</option>
+        <option value="happy_holidays">Halloween</option>
+        <option value="everyday">Everyday</option>
+      </select>
+    </div>
+
+    <!-- RIGHT SIDE — LOGO UPLOAD + TEXT -->
+    <div class="design-box">
+      <h3>Upload logo:</h3>
+
+      <div id="upload-area">
+        <p>drag and drop file here</p>
+        <span>or</span>
+        <button id="upload-btn">Browse file on computer</button>
+        <input type="file" id="file-input" hidden>
+      </div>
+
+      <label>Enter text:</label>
+      <input type="text" id="design-text" placeholder="text">
+    </div>
+
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="config-nav">
+    <a href="#" class="back-link" data-prev="pralines.html">← back</a>
+    <a href="#" class="continue-link" data-next="quote.html">Continue →</a>
+  </div>
+
+</section>
+<script src="/js/design.js"></script>

@@ -161,3 +161,4 @@
     summaryBox.innerHTML = html;
   }
 })();
+
