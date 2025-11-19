@@ -1,1 +1,79 @@
-<p>Her sender man sin forespørgsel.</p>
+<link rel="stylesheet" href="../css/quote.css">
+
+<section class="quote-step">
+
+  <h2 class="section-title">Request quote</h2>
+
+  <div class="quote-options">
+
+    <label class="quote-check">
+      <input type="checkbox" id="rq-quote">
+      Request Quote
+    </label>
+
+    <label class="quote-check">
+      <input type="checkbox" id="rq-spec">
+      Request product specification
+    </label>
+
+  </div>
+
+  <!-- HIDDEN FORM CONTAINER -->
+  <div id="quote-form-box" class="quote-box hidden">
+
+    <h3>Request Quote</h3>
+
+    <p class="info-text">
+      Please notice that the configured chocolate gift box can require subsequent testing and 
+      in rare cases we can only partially meet your request.
+    </p>
+
+    <div class="form-grid">
+
+      <div class="form-field">
+        <label>Company name</label>
+        <input type="text" id="q-company">
+      </div>
+
+      <div class="form-field">
+        <label>Country</label>
+        <input type="text" id="q-country">
+      </div>
+
+      <div class="form-field">
+        <label>E-mail</label>
+        <input type="email" id="q-email">
+      </div>
+
+      <div class="form-field">
+        <label>Phone</label>
+        <input type="text" id="q-phone">
+      </div>
+
+      <div class="form-field">
+        <label>Order size</label>
+        <input type="number" id="q-order">
+      </div>
+
+      <div class="form-field">
+        <label>Expected yearly quantity</label>
+        <input type="number" id="q-yearly">
+      </div>
+
+    </div>
+
+    <label class="privacy-check">
+      <input type="checkbox" id="q-privacy">
+      I accept that Carletti may store my contact information in accordance with the company
+      <a href="#">privacy policy</a>.
+    </label>
+
+    <button class="send-btn">Send Request</button>
+
+    <p class="footnote">
+      Expected response time is 5 business days, but we will handle your request as fast as possible.
+    </p>
+
+  </div>
+
+</section>

@@ -137,3 +137,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+window.addEventListener("load", () => {
+  // Nulstil hele design-steppet ved reload
+  sessionStorage.removeItem("designColor");
+  sessionStorage.removeItem("designTheme");
+  sessionStorage.removeItem("designLogoName");      // 👈 vigtig
+  sessionStorage.removeItem("designLogoUploaded");  // 👈 vigtig
+  sessionStorage.removeItem("designText");
+});
