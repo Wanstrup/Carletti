@@ -11,7 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const blisterSection = document.querySelector("#giftbox-section .blister-section");
   const wrapperSections = document.querySelectorAll(".wrapper-section");
 
-  // Funktion til at nulstille alt
+  window.config = window.config || {};
+
+  // -----------------------------
+  // RESET FUNCTION
+  // -----------------------------
   function resetAll() {
     allSections.forEach(sec => (sec.style.display = "block"));
     [blisterSection, ...wrapperSections].forEach(el => el.classList.remove("active"));
@@ -19,110 +23,129 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".blister-options button").forEach(btn => btn.classList.remove("active"));
   }
 
-  // ---------- GIFTBOX ----------
+  // -----------------------------
+  // GIFTBOX
+  // -----------------------------
   giftboxButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const isActive = btn.classList.contains("active");
-
-      resetAll(); // nulstil alt først
+      resetAll();
 
       if (!isActive) {
         btn.classList.add("active");
 
-        // Skjul de andre sektioner
+        // Find størrelse i knap-tekst
+        let size = "small";
+        if (btn.dataset.type.includes("medium")) size = "medium";
+        if (btn.dataset.type.includes("large")) size = "large";
+
+        // 🔥 TRACKER UPDATE
+        window.config.selectedPackaging = "giftbox";
+        window.config.selectedSize = size;
+        document.dispatchEvent(new Event("packagingChanged"));
+
         boxSection.style.display = "none";
         bagSection.style.display = "none";
 
-        // Vis blister
         blisterSection.classList.add("active");
 
-        // Fjern evt. wrapper-sektion for giftbox (de må ikke vises)
         const giftWrapper = giftboxSection.querySelector(".wrapper-section");
         if (giftWrapper) giftWrapper.classList.remove("active");
       }
     });
   });
 
-  // ---------- BOX ----------
+  // -----------------------------
+  // BOX
+  // -----------------------------
   boxButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const isActive = btn.classList.contains("active");
-
       resetAll();
 
       if (!isActive) {
         btn.classList.add("active");
 
-        // Skjul de andre
+        let size = "small";
+        if (btn.dataset.type.includes("medium")) size = "medium";
+
+        // 🔥 TRACKER UPDATE
+        window.config.selectedPackaging = "box";
+        window.config.selectedSize = size;
+        document.dispatchEvent(new Event("packagingChanged"));
+
         giftboxSection.style.display = "none";
         bagSection.style.display = "none";
 
-        // Vis wrapper direkte
         const wrapper = boxSection.querySelector(".wrapper-section");
         wrapper.classList.add("active");
       }
     });
   });
 
-  // ---------- BAG ----------
+  // -----------------------------
+  // BAG
+  // -----------------------------
   bagButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const isActive = btn.classList.contains("active");
-
       resetAll();
 
       if (!isActive) {
         btn.classList.add("active");
 
-        // Skjul de andre
+        let size = "small";
+        if (btn.dataset.type.includes("medium")) size = "medium";
+        if (btn.dataset.type.includes("large")) size = "large";
+
+        // 🔥 TRACKER UPDATE
+        window.config.selectedPackaging = "bag";
+        window.config.selectedSize = size;
+        document.dispatchEvent(new Event("packagingChanged"));
+
         giftboxSection.style.display = "none";
         boxSection.style.display = "none";
 
-        // Vis wrapper direkte
         const wrapper = bagSection.querySelector(".wrapper-section");
         wrapper.classList.add("active");
       }
     });
   });
 
-  // ---------- BLISTER ----------
+  // -----------------------------
+  // BLISTER (GIFTBOX ONLY)
+  // -----------------------------
   const blisterButtons = document.querySelectorAll(".blister-options button");
   blisterButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const isActive = btn.classList.contains("active");
 
-      // Hvis man klikker på samme blister igen → fjern valget
       if (isActive) {
         btn.classList.remove("active");
-        window.config = window.config || {};
         delete window.config.blister;
         return;
       }
 
-      // Fjern active fra andre
       blisterButtons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
-      // Gem valget
-      window.config = window.config || {};
       window.config.blister = btn.dataset.blister;
-
-      // Sæt automatisk "unwrapped" for giftbox
       window.config.wrapType = "unwrapped";
-      console.log("Giftbox blister selected:", window.config.blister, "| wrapType:", window.config.wrapType);
+
+      console.log("Giftbox blister:", window.config.blister);
     });
   });
 
-  // ---------- WRAPPER ----------
+  // -----------------------------
+  // WRAPPER (BOX/BAG)
+  // -----------------------------
   const wrapperButtons = document.querySelectorAll(".wrapper-options button");
   wrapperButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const isActive = btn.classList.contains("active");
 
-      // Klik på samme → fjern valget
       if (isActive) {
         btn.classList.remove("active");
-        window.config = window.config || {};
         delete window.config.wrapType;
         return;
       }
@@ -130,19 +153,19 @@ document.addEventListener("DOMContentLoaded", () => {
       wrapperButtons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
-      const wrapType = btn.dataset.wrap;
-      window.config = window.config || {};
-      window.config.wrapType = wrapType;
-      console.log("User selected praline type:", wrapType);
+      window.config.wrapType = btn.dataset.wrap;
+      console.log("Praline type:", window.config.wrapType);
     });
   });
 });
 
+// -----------------------------
+// RESET DESIGN STEP ON PAGE LOAD
+// -----------------------------
 window.addEventListener("load", () => {
-  // Nulstil hele design-steppet ved reload
   sessionStorage.removeItem("designColor");
   sessionStorage.removeItem("designTheme");
-  sessionStorage.removeItem("designLogoName");      // 👈 vigtig
-  sessionStorage.removeItem("designLogoUploaded");  // 👈 vigtig
+  sessionStorage.removeItem("designLogoName");
+  sessionStorage.removeItem("designLogoUploaded");
   sessionStorage.removeItem("designText");
 });

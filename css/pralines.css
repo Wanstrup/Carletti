@@ -133,3 +133,7 @@ h4 {
   width: 20px;
   text-align: center;
 }
+.plus.locked {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
