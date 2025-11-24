@@ -23,3 +23,49 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 });
+
+
+document.addEventListener("click", (e) => {
+
+    // --- Continue button ---
+    const nextBtn = e.target.closest(".continue-link");
+    if (nextBtn) {
+        e.preventDefault();
+        const nextFile = nextBtn.dataset.next;
+        openStepByFile(nextFile);
+    }
+
+    // --- Back button ---
+    const backBtn = e.target.closest(".back-link");
+    if (backBtn) {
+        e.preventDefault();
+        const prevFile = backBtn.dataset.prev;
+        openStepByFile(prevFile);
+    }
+});
+
+
+// Helper: Åbn det accordion-item som matcher en step-fil
+function openStepByFile(filename) {
+    // Find accordion-id ud fra filnavn:
+    // pralines.html → pralines
+    // design.html → design
+    // quote.html → quote
+    const stepId = filename.replace(".html", "");
+
+    const targetAcc = document.querySelector(`#${stepId}`);
+    if (!targetAcc) return;
+
+    // Luk alle andre accordions
+    document.querySelectorAll(".accordion-item").forEach(item => {
+        item.classList.remove("active");
+        const c = item.querySelector(".accordion-content");
+        if (c) c.style.maxHeight = null;
+    });
+
+    // Åbn den rigtige accordion
+    targetAcc.classList.add("active");
+    const content = targetAcc.querySelector(".accordion-content");
+    if (content) content.style.maxHeight = content.scrollHeight + "px";
+}
+
