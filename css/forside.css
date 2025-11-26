@@ -462,3 +462,40 @@
   pointer-events: none;
 }
 
+.option-buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  height: 160px;
+  width: 150px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option-buttons button img {
+  width: 80px;    /* skaler billedet så det ikke fylder for meget */
+  height: auto;
+  pointer-events: none;
+  object-fit: contain;
+}
+
+.option-buttons button.active {
+  border-color: green;
+  background: #ffeaea;
+}
+
+.option-header {
+  font-weight: bold;
+  text-transform: capitalize;
+  align-items: center;
+}
+.option-buttons img {
+  pointer-events: none;   
+  user-select: none;
+}
