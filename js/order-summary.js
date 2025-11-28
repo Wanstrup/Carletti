@@ -104,7 +104,7 @@
     // Hvis der ikke er valgt noget som helst
     if (!hasPackaging && !hasBlister && !hasPralines && !hasDesign) {
       summaryBox.innerHTML = `
-        <h2>Order Summary</h2>
+        <h2>Selection Summary</h2>
         <p class="summary-placeholder">No selections yet.</p>
       `;
       return;
